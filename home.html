@@ -4,6 +4,10 @@
             <style>
                     @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
                     </style> 
+                    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+                    <style>
+                        @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+                        </style>
         <meta charset="UTF-8"/>
         <meta name = "description" content = "this is the description"/>
         <link rel = "stylesheet" type = "text/css" href ="style.css"/>
@@ -14,7 +18,7 @@
     </head>
     <body>
         <header class ="main-header">
-            <nav class = "main-nav">
+            <nav class = " nav main-nav">
                 <ul>
                     <li>
                         <a href = "home.html">HOME</a>
@@ -28,53 +32,68 @@
                 </ul>
             </nav>
             <hr>
-            <h1> Agent Side Grinder</h1>
-            <button>Get our Latest Album</button>
+            <h1 class = "band-name band-larger-name"> Agent Side Grinder</h1>
+           <div class ="container">
+                <button class ="btn btn-header">Get our Latest Album</button>
+
+           </div>
             <br>
             <br>
-            <button>&#9658;</button>
+            <button class ="btn btn-header btn-play">&#9658;</button>
             <!--INSERT AN BACKGORUND IMAGE HERE-->
         </header>
         <main>
-            <section>
-                <h3>TOURS</h3>
+            <section class ="content-section container">
+                <h3 class = "section-header">TOURS</h3>
                 <div>
-                    <div>
-                        <strong>JUL 16</strong>, 
-                        &lt;&gt;
-                        <span> DETROIT, MI</span>
-                        &lt;&gt;
-                        <span>ENERGY MUSIC THEATHRE</span>
-                        &lt;&gt;
-                     <button type = "button"> BUY TICKETS</button>   
-                    </div>
-                    <hr>
-                    <div>
-                            <strong>AUG 16</strong>,
-                            &lt;&gt; 
-                            <span>CURITIBA, PR</span>
-                            &lt;&gt;
-                            <span>
-                                    PEDREIRA PAULO LEMINSKI
-                            </span>
-                            &lt;&gt;
-                            <button type = "button"> BUY TICKETS</button>
-                        </div>
-                        <hr>
+                    <div class ="tour-row">
+                        <span class = "tour-item tour-date">JUL 16</span>
+                       
+                        <span class = "tour-item tour-city"> DETROIT, MI</span>
+                        
+                        <span class = "tour-item tour-arena">ENERGY MUSIC THEATHRE</span>
+            
+                     <button type = "button" class ="btn tour-item tour-btn btn-primary"> BUY TICKETS</button>  
+                     </div>
+                     <div class ="tour-row">
+                        <span class = "tour-item tour-date">JUL 16</span>
+                       
+                        <span class = "tour-item tour-city"> CURITIBA,PR</span>
+                        
+                        <span class = "tour-item tour-arena">PULP BAR, JAIME REIS</span>
+            
+                     <button type = "button" class ="btn tour-item tour-btn btn-primary"> BUY TICKETS</button>
+                     </div>
+            
+                        
                 </div>
             </section>
             
         </main>
         <hr>
         
-        <footer>
-            <ul>
-                <li>
-                    <a href = "https://www.youtube.com/watch?v=9Il1mZd6ZQ4" target = "_blank">
-                        <img src = "Youtube_logo.png"/>
-                    </a>
-                </li>
-            </ul>
+        <footer class = "footer main-footer">
+            <div class ="container main-footer-container">
+                    <h2 class ="band-name ">Agent Side Grinder</h2>
+                    <ul class = "nav footer-nav">
+                            <li>
+                                    <a href = "https://www.youtube.com/watch?v=9Il1mZd6ZQ4"  target = "_blank">
+                                        <img src = "youtube-symbol.png"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "https://open.spotify.com/artist/0kMA8StaJw3CUvN42xCLSe" target = "_blank">
+                                        <img src = "spotify.png"/>
+                                    </a>
+                                </li>
+                                <li>
+                                        <a href = "https://pt-br.facebook.com/agentsidegrinder/" target = "_blank">
+                                            <img src = "facebook.png"/>
+                                        </a>
+                                    </li>
+                       
+                    </ul>
+            </div>
         </footer>
 
     </body>
