@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+*{
+    box-sizing: border-box;
+    /*the width attribute will set the padding as well */
+    font-family:Raleway;
+    color: #777777;
+
+}
+@font-face{
+    font-family: "Crimes Times Six";
+    src : url("Crimes\ Times\ Six.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    margin:0;
+    padding:0;
+}
+
+.main-header{
+    background-color:rgba(0,0,0,.6);
+    background-image:url(agentBackground.jpg);
+    background-blend-mode: multiply;
+    /* background-blend-mode unite background color and background-image,
+     since its impossible to use both of them at the same time */
+    background-size:cover;
+    padding-bottom: 30px;
+
+}
+.main-nav{
+    text-align: center;
+    font-size: medium;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+.nav ul
+{  
+    margin :0;
+
+}
+.main-nav li{
+    padding: 0 5%;
+
+}
+.nav li{
+    display:inline;
+
+
+}
+.nav a:hover{
+    background-color: rgba(255,255,255,.3);
+}
+.nav a{
+    display:inline-block;
+    padding: .5em;
+    color:white;
+    text-decoration:none;
+
+
+}
+.band-name
+{
+    text-align: center;
+    margin:0;
+    font-size: 4em;
+    font-family: Crimes Times Six;
+    font-style:normal;
+    color: white;
+
+}
+.band-name-larger
+{
+    font-size: 9em;
+
+}
+.content-section
+{
+    margin:1em;
+}
+.container{
+    max-width: 900px;
+    margin:0 auto;
+    padding:0 1.5em;
+
+}
+.section-header{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #333333;
+    text-align: center;
+    font-size: 2.5em;
+}
+.about-band-image
+{
+    float:left;
+    /*i was supposed to use float in the image to be on the left corner of the website
+    but i preffered to use it this way because it looks better in the aesthetic that i am working on*/
+    
+}
+/*TODO use chrome extension to pick the color used in the header, it is going to fit better */
+.main-footer
+{
+    background-color:rgb( 29, 137, 104);
+    color:white;
+    padding:.25em;
+
+
+}
+.main-footer-container
+{
+    display:flex;
+    align-items: center;
+}
+.main-footer-container ul
+{
+    flex-grow: 1;
+    text-align: end;
+}
+.footer-nav li{
+    padding 0 .5em;
+
+}
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+
+}
+
+/*in this class only the ul in the nav class will be changed*/
